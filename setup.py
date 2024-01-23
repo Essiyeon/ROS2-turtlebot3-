@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'move_turtlesim = ros_siyeon.move_turtlesim:main'
+            'move_turtlesim = ros_siyeon.move_turtlesim:main',
+            'move_turtlebot = ros_siyeon.move_turtlebot:main'
         ],
     },
 )
