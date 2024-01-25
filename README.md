@@ -1,7 +1,7 @@
-# gongju-university-ros2
+# ROS_turtlebot3
 
 ---
-2024_01_22
+2024.01.22(월)~2024.01.26(금)
 ---
 
 - ros2 개요 설명
