@@ -35,6 +35,11 @@
 - Action interface 구현
 	- Fibonacci 수열
 - Arithmetic 패키지 (Topic, Service, Action 활용)
+	- Main, arg(Topic), operator(Service) 만들기
 	- arg, main, operator 각각 실행 후 확인
 	- launch파일(arg + main) 만들기
 
+26일(금)
+- Arithmetic 패키지 (Topic, Service, Action 활용)
+	- checker(Action) 만들기, 실행 확인 및 디버그
+	- argpars 활용
