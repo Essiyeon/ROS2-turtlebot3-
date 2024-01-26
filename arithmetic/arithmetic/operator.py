@@ -6,14 +6,14 @@ import random
 
 class Operator(Node):
     def __init__(self):
-        super().__init__('operator') #type: ignore
+        super().__init__("operator")  # type: ignore
         self.cli = self.create_client(ArithmeticOperator, "operator")
         while not self.cli.wait_for_service(timeout_sec=1.0):
-            self.get_logger().info("service not available, wating again!!!!!!!!!!!!!!!")
+            self.get_logger().info("service not available, waiting again!!!!!!!!!!")
         self.req = ArithmeticOperator.Request()
 
     def send_request(self):
-        self.req.arithmetic_operator = random.randint(1,4)
+        self.req.arithmetic_operator = random.randint(1, 4)
         self.future = self.cli.call_async(self.req)
         return self.future
 
@@ -45,5 +45,5 @@ def main():
     rclpy.shutdown()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
